@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { DarkThemeToggle } from "flowbite-react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,33 +10,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <main className="flex min-h-screen items-center justify-center gap-2 dark:bg-gray-800">
+      <h1 className="text-2xl dark:text-white">Flowbite React + Remix</h1>
+      <DarkThemeToggle />
+    </main>
   );
 }

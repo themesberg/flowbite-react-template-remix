@@ -21,7 +21,7 @@ module.exports = {
   },
 
   // Base config
-  extends: ["eslint:recommended"],
+  extends: ["eslint:recommended", "plugin:tailwindcss/recommended", "prettier"],
 
   overrides: [
     // React
@@ -80,4 +80,11 @@ module.exports = {
       },
     },
   ],
+
+  settings: {
+    tailwindcss: {
+      callees: ["twMerge", "createTheme"],
+      classRegex: "^(class(Name)|theme)?$",
+    },
+  },
 };
