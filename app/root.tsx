@@ -1,3 +1,4 @@
+import { ThemeInit } from ".flowbite-react/init";
 import { LinksFunction } from "@remix-run/node";
 import {
   Links,
@@ -24,6 +25,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ThemeModeScript />
       </head>
       <body>
+        <ThemeInit />
         {children}
         <ScrollRestoration />
         <Scripts />

@@ -119,24 +119,24 @@ export default function Index() {
       <div className="absolute inset-0 size-full">
         <div className="relative h-full w-full select-none">
           <img
-            className="min-w-dvh absolute right-0 dark:hidden"
+            className="absolute right-0 min-w-dvh dark:hidden"
             alt="Pattern Light"
             src="/pattern-light.svg"
           />
           <img
-            className="min-w-dvh absolute right-0 hidden dark:block"
+            className="absolute right-0 hidden min-w-dvh dark:block"
             alt="Pattern Dark"
             src="/pattern-dark.svg"
           />
         </div>
       </div>
-      <div className="absolute right-4 top-4">
+      <div className="absolute top-4 right-4">
         <DarkThemeToggle />
       </div>
 
       <div className="relative flex w-full max-w-5xl flex-col items-center justify-center gap-12">
         <div className="relative flex flex-col items-center gap-6">
-          <h1 className="relative text-center text-4xl font-bold leading-[125%] text-gray-900 dark:text-gray-200">
+          <h1 className="relative text-center text-4xl leading-[125%] font-bold text-gray-900 dark:text-gray-200">
             Build fast with us
           </h1>
           <span className="inline-flex flex-wrap items-center justify-center gap-2.5 text-center">
@@ -149,7 +149,7 @@ export default function Index() {
                 alt="Flowbite React logo"
                 src="/flowbite-react.svg"
               />
-              <span className="relative w-fit whitespace-nowrap text-xl font-semibold text-[#111928] dark:text-white">
+              <span className="relative w-fit text-xl font-semibold whitespace-nowrap text-[#111928] dark:text-white">
                 Flowbite React
               </span>
             </span>
@@ -173,11 +173,11 @@ export default function Index() {
                     <div className="size-9">{card.icon}</div>
 
                     <div className="flex flex-1 flex-col items-start justify-center gap-1.5 border-l border-gray-200 pl-3.5 dark:border-gray-700">
-                      <div className="w-full font-sans text-lg font-semibold leading-4 text-gray-900 dark:text-gray-200">
+                      <div className="w-full font-sans text-lg leading-4 font-semibold text-gray-900 dark:text-gray-200">
                         {card.title}
                       </div>
 
-                      <div className="w-full font-sans text-sm font-normal leading-5 text-gray-500 dark:text-gray-400">
+                      <div className="w-full font-sans text-sm leading-5 font-normal text-gray-500 dark:text-gray-400">
                         {card.description}
                       </div>
                     </div>
